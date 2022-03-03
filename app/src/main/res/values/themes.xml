@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Calculadora" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryVariant">@color/almostBlack</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="buttonRow">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="buttonNumber">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/almostBlack</item>
+        <item name="android:onClick">numberAction</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="buttonOperator">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/lightGray</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:onClick">operationAction</item>
+        <item name="android:layout_margin">2dp</item>
+
+    </style>
+</resources>
